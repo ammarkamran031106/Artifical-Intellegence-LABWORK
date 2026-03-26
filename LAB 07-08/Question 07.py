@@ -30,3 +30,4 @@ if status in (cp_model.FEASIBLE, cp_model.OPTIMAL):
     for row in range(N):
         print(f"  Row {row} -> Column {solver.Value(queens[row])}")
 else:
+    print("No Solution Found")
